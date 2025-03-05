@@ -1,6 +1,6 @@
 import { environment } from './../../environments/environments';
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, signal, WritableSignal } from '@angular/core';
 import { Observable } from 'rxjs';
 
 
@@ -8,6 +8,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
+
+ productWished:WritableSignal<string[]> = signal([])
 
   constructor(private _httpClient:HttpClient) { }
 

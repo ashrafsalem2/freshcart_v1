@@ -33,6 +33,7 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getData();
+    this.addToWishList("6428ebc6dc1175abc65ca0b9") // for start to get all wished
   }
 
   getData(): void {
