@@ -13,7 +13,7 @@ import { SearchPipe } from '../../shared/pipes/search/search.pipe';
 
 @Component({
   selector: 'app-products',
-  imports: [CarouselModule, UpperCasePipe, CurrencyPipe, FormsModule, SearchPipe, RouterLink, TranslatePipe, ProductsComponent],
+  imports: [CarouselModule, UpperCasePipe, CurrencyPipe, FormsModule, SearchPipe, RouterLink, TranslatePipe],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss'
 })
