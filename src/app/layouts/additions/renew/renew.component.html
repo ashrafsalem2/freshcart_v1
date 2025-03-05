@@ -1,0 +1,54 @@
+<form [formGroup]="newPasswordForm" (ngSubmit)="submitNewPasswordForm()">
+    <div
+      class="w-2/4 mx-auto px-5 rounded-md bg-slate-200 h-60 flex flex-col justify-center align-middle items-center"
+    >
+    <h1 class="text-3xl text-green-600 text-center font-bold pb-2">{{ 'renewPassword.renewPassword'|translate }}</h1>
+      <input
+        type="email"
+        formControlName="email"
+        class="w-3/4 p-2 rounded-md border-green-400 focus:ring-green-500 focus:border-green-500 mb-2"
+        placeholder="{{ 'renewPassword.email'|translate }}"
+      />
+      @let forget = newPasswordForm.get('email');
+      @let newPass = newPasswordForm.get('newPassword');
+       @if(forget?.errors &&
+      forget?.touched) {
+      <div class="alert">
+        @if(forget?.errors?.['required']){
+          <p>{{ 'renewPassword.emailRequired'|translate }}</p>  
+         } @else if(forget?.errors?.['email']){
+          <p>{{ 'renewPassword.emailPattern'|translate }}</p>
+        }
+      </div>
+      }
+      <input
+        type="password"
+        formControlName="newPassword"
+        class="w-3/4 p-2 rounded-md border-blue-400 mb-2"
+        placeholder="{{ 'renewPassword.password'|translate }}"
+      />
+       @if(newPass?.errors &&
+      newPass?.touched) {
+      <div class="alert">
+        @if(newPass?.errors?.['required']){
+          <p>{{ 'renewPassword.passwordRequired'|translate }}</p>  
+         }
+      </div>
+      }
+      @if(errorMsg){
+          <div class="alert">
+              <p>{{ errorMsg }}</p>
+          </div>
+      }
+      <div class="flex justify-end w-3/4 mt-5">
+        <button
+          class="bg-green-600 text-white text-1xl px-3 py-2 rounded-md hover:bg-white hover:text-green-600 transition-all duration-300"
+        >
+        {{ 'renewPassword.submit'|translate }} @if (isloading) {
+          <i class="fa fa-spin fa-spinner"></i>
+          }
+        </button>
+      </div>
+    </div>
+  </form>
+  

@@ -1,0 +1,75 @@
+<div class="bg-slate-50 rounded border shadow p-2 w-[75%] mx-auto">
+  <h1 class="text-3xl text-green-600 text-center font-bold">{{ 'cart.shopCart' | translate }}</h1>
+  @if(cartDetails.totalCartPrice > 0){
+
+  <div class="flex justify-between">
+    <p class="text-green-600 mb-2">
+      {{ 'cart.totalCartPrice' | translate }} {{ cartDetails.totalCartPrice | currency : "GBP" }}
+    </p>
+    <button
+      class="bg-red-900 text-white px-3 py-2 text-sm rounded"
+      (click)="clearCart()"
+    >
+    {{ 'cart.clearCart' | translate }}
+    </button>
+  </div>
+
+  @for (prod of cartDetails.products; track prod.product._id) {
+  <!-- will be repeated -->
+  <div class="grid md:grid-cols-[10%_minmax(0,1fr)] border-b mb-2 p-2">
+    <!-- image -->
+    <div class="p-2">
+      <img
+        [src]="prod.product.imageCover"
+        class="w-full h-[100px] object-cover"
+        [alt]="prod.product.title"
+      />
+    </div>
+
+    <!-- info  -->
+    <div class="flex justify-between items-center">
+      <!-- info -->
+      <div>
+        <h3>{{ prod.product.title }}</h3>
+        <h4>{{ 'cart.Price' | translate }} {{ prod.price | currency : "GBP" }}</h4>
+        <button (click)="deleteCartItem(prod.product._id)">
+          <i class="fas fa-trash-can text-green-600 mr-1"></i> &nbsp;{{ 'cart.remove' | translate }}
+        </button>
+      </div>
+
+      <!-- button -->
+      <div class="flex justify-center items-center gap-4">
+        <button
+          class="text-green-600 text-3xl"
+          (click)="updateProductCount(prod.product._id, prod.count + 1)"
+        >
+          <i class="fa-regular fa-square-plus"></i>
+        </button>
+        <span class="font-bold text-1xl">{{ prod.count }}</span>
+        <button
+          class="text-green-600 text-3xl"
+          (click)="updateProductCount(prod.product._id, prod.count - 1)"
+        >
+          <i class="fa-regular fa-square-minus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  }
+  <button class="btn-main" [routerLink]="['/checkout', cartDetails._id]">
+    {{ 'cart.checkout' | translate }}
+  </button>
+  } @else {
+  <div class="flex flex-col justify-between w-full p-5">
+    <img
+      src="/images/noItem.png"
+      class="object-scale-down h-[150px]"
+      alt="no item"
+    />
+    <p class="text-center text-3xl text-green-600 font-bold mt-10">
+      {{ 'cart.empty' | translate }}
+    </p>
+  </div>
+
+  }
+</div>

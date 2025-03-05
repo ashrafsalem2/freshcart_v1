@@ -29,12 +29,17 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets/"
             ],
             "styles": [
+              "node_modules/ngx-spinner/animations/square-jelly-box.css",
+              "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "./node_modules/flowbite/dist/flowbite.min.js"
+            ],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -72,7 +77,8 @@
               "buildTarget": "freshmarket:build:production"
             },
             "development": {
-              "buildTarget": "freshmarket:build:development"
+              "buildTarget": "freshmarket:build:development",
+              "hmr": false
             }
           },
           "defaultConfiguration": "development"

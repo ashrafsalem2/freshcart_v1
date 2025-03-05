@@ -1,0 +1,37 @@
+<form [formGroup]="codeForm" (ngSubmit)="submitcodeForm()">
+    <div
+      class="w-2/4 mx-auto px-5 rounded-md bg-slate-200 h-60 flex flex-col justify-center align-middle items-center"
+    >
+    <h1 class="text-3xl text-green-600 text-center font-bold  pb-4">{{ 'code.enterCode' | translate }}</h1>
+      <input
+        type="text"
+        formControlName="resetCode"
+        class="w-3/4 p-2 rounded-md border-green-400 focus:ring-green-500 focus:border-green-500"
+        placeholder="{{ 'code.code' | translate }}"
+      />
+      @let forget = codeForm.get('resetCode');
+       @if(forget?.errors &&
+      forget?.touched) {
+      <div class="alert">
+        @if(forget?.errors?.['required']){
+          <p>{{ 'code.codeRequired' | translate }}</p>  
+         } 
+      </div>
+      }
+      @if(errorMsg){
+          <div class="alert">
+              <p>{{ errorMsg }}</p>
+          </div>
+      }
+      <div class="flex justify-end w-3/4 mt-5">
+        <button
+          class="bg-green-600 text-white text-1xl px-3 py-2 rounded-md hover:bg-white hover:text-green-600 transition-all duration-300"
+        >
+          {{ 'code.renew' | translate }} @if (isloading) {
+          <i class="fa fa-spin fa-spinner"></i>
+          }
+        </button>
+      </div>
+    </div>
+  </form>
+  

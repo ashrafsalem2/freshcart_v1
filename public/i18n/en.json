@@ -1,0 +1,126 @@
+{
+    "navbar":{
+        "home": "Home",
+        "products": "Products",
+        "categories": "Categories",
+        "brand": "Brand",
+        "login": "Login",
+        "register": "Register",
+        "logout": "Logout",
+        "lang":"Lang"
+    },
+
+    "category":{
+        "shopPopualar":"Shop Popular Categories",
+        "search":"Search ..."
+    },
+    "brand":{
+        "shopPopualar":"Shop Popular Categories",
+        "search":"Search ..."
+    },
+
+    "products":{
+        "search":"Search ...",
+        "popularProducts": "Popular Products",
+        "addToCart":"Add To Cart",
+        "addedToCart":"Product Added Successfully To Your Cart"
+    },
+
+    "footer":{
+        "GetApp":"Get The FreshCart App",
+        "desc":"We Will Send You a Link, Open it on Your Phone to download the app",
+        "email":"Email",
+        "shareAppLink":"Share App Link",
+        "paymentPart":"Payment partners",
+        "getDelivery":"Get Deliveries with FreshCart"
+
+    },
+    
+    "cart":{
+        "shopCart":"Shop Cart",
+        "totalCartPrice":"Total Cart Price :",
+        "clearCart": "Clear Cart",
+        "price":"Price:",
+        "remove":"Remove",
+        "checkout": "Check Out",
+        "empty":"No Item Inside"
+    },
+
+    "checkout":{
+        "shipmentDetails" : "Shipment Details",
+        "details": "Details",
+        "detailsRequired":"The Details Reuired",
+        "phone":"Phone",
+        "phoneRequired":"The phone Reuired",
+        "phonePattern":"The Egyption Phone Pattern not match",
+        "city":"City",
+        "cityRequired":"The city Reuired",
+        "onlinePayment":"Online Payment"
+    },
+    
+    "login":{
+        "log":"Login",
+        "email":"Email",
+        "emailRequired":"The Email Reuired",
+        "emailPattern":"A Valied Email Required",
+        "password": "Password",
+        "passwordRequired":"The Password Required",
+        "passwordPattern":"one Capital Letter and more than 7 letters or numbers or chars",
+        "signIn":"Sign in",
+        "forgetPassword":"Forget Password"
+    },
+
+    "notFound":{
+        "notFound":"notfound works!"
+    },
+
+    "register":{
+        "register":"Register",
+        "name":"Name",
+        "nameRequired":"The Name is Required",
+        "nameMinLength":"The min length: 3 char",
+        "nameMaxLength":"The max length: 20 char",
+        "email":"Email",
+        "emailRequired":"The Email Reuired",
+        "emailPattern":"A Valied Email Required",
+        "password": "Password",
+        "passwordRequired":"The Password Required",
+        "passwordPattern":"one Capital Letter and more than 7 letters or numbers or chars",
+        "rePassword": "re-Password",
+        "rePasswordRequired":"The rePassword Required",
+        "rePasswordMisMatch":"Password and rePassword is Not Matched",
+        "phone":"Phone",
+        "phoneRequired":"The phone Reuired",
+        "phonePattern":"The Egyption Phone Pattern not match",
+        "submit": "Sign In"
+    },
+
+    "forgetPassword":{
+        "enterEmail":"Enter Your Register Email",
+        "email":"Enter Your Email",
+        "emailRequired": "email is required",
+        "emailPattern":"email is not in correct format",
+        "sendCode":"Send Code"
+    },
+
+    "code":{
+        "enterCode":">Enter Received Code",
+        "code":"Enter received Code",
+        "codeRequired":"Code is Required",
+        "renew":"Renew Password"
+    },
+
+    "renewPassword":{
+        "renewPassword":"Renew Your New Password",
+        "email":"Enter Your Email",
+        "emailRequired":"The Email Reuired",
+        "emailPattern":"A Valied Email Required",
+        "password": "Enter New Password",
+        "passwordRequired":"New Password Is Required",
+        "submit":"Renew and Back To Login"
+    },
+
+    "allOrders":{
+
+    }
+}

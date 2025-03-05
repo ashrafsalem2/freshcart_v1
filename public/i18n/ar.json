@@ -1,0 +1,126 @@
+{
+    "navbar": {
+        "home": "الرئيسية",
+        "products": "المنتجات",
+        "categories": "الفئات",
+        "brand": "العلامة التجارية",
+        "login": "تسجيل الدخول",
+        "register": "التسجيل",
+        "logout": "تسجيل الخروج",
+        "lang": "اللغة"
+    },
+
+    "category": {
+        "shopPopualar": "تسوق الفئات الشعبية",
+         "search":"ابحث ..."
+    },
+
+    "brand":{
+       "shopPopualar": "تسوق الفئات الشعبية",
+         "search":"ابحث ..."
+    },
+
+    "products": {
+        "search": "ابحث ...",
+        "popularProducts": "المنتجات الشعبية",
+        "addToCart": "أضف إلى السلة",
+        "addedToCart":"تم اضافة المنتج بنجاح داخل سلتك"
+    },
+
+    "footer": {
+        "GetApp": "احصل على تطبيق فريش كارت",
+        "desc": "سوف نرسل لك رابطًا، افتحه على هاتفك لتحميل التطبيق",
+        "email": "البريد الإلكتروني",
+        "shareAppLink": "مشاركة رابط التطبيق",
+        "paymentPart": "شركاء الدفع",
+        "getDelivery": "احصل على توصيلات مع فريش كارت"
+    },
+
+    "cart": {
+        "shopCart":"سلة المشتريات",
+        "totalCartPrice": "إجمالي سعر السلة :",
+        "clearCart": "مسح السلة",
+        "remove":"حذف",
+        "price": "السعر:",
+        "checkout": "الدفع",
+        "empty": "لا يوجد عناصر داخل السلة"
+    },
+
+    "checkout": {
+        "shipmentDetails": "تفاصيل الشحن",
+        "details": "التفاصيل",
+        "detailsRequired": "التفاصيل مطلوبة",
+        "phone": "الهاتف",
+        "phoneRequired": "الهاتف مطلوب",
+        "phonePattern": "نمط الهاتف المصري غير متطابق",
+        "city": "المدينة",
+        "cityRequired": "المدينة مطلوبة",
+        "onlinePayment": "الدفع عبر الإنترنت"
+    },
+
+    "login": {
+        "log": "تسجيل الدخول",
+        "email": "البريد الإلكتروني",
+        "emailRequired": "البريد الإلكتروني مطلوب",
+        "emailPattern": "البريد الإلكتروني يجب أن يكون صالحًا",
+        "password": "كلمة المرور",
+        "passwordRequired": "كلمة المرور مطلوبة",
+        "passwordPattern": "يجب أن تحتوي على حرف كبير وأكثر من 7 أحرف أو أرقام أو رموز",
+        "signIn": "تسجيل الدخول",
+        "forgetPassword": "نسيت كلمة المرور"
+    },
+
+    "notFound": {
+        "notFound": "لم يتم العثور على الصفحة"
+    },
+
+    "register": {
+        "register": "التسجيل",
+        "name": "الاسم",
+        "nameRequired": "الاسم مطلوب",
+        "nameMinLength": "الحد الأدنى للطول: 3 أحرف",
+        "nameMaxLength": "الحد الأقصى للطول: 20 حرفًا",
+        "email": "البريد الإلكتروني",
+        "emailRequired": "البريد الإلكتروني مطلوب",
+        "emailPattern": "البريد الإلكتروني يجب أن يكون صالحًا",
+        "password": "كلمة المرور",
+        "passwordRequired": "كلمة المرور مطلوبة",
+        "passwordPattern": "يجب أن تحتوي على حرف كبير وأكثر من 7 أحرف أو أرقام أو رموز",
+        "rePassword": "إعادة كلمة المرور",
+        "rePasswordRequired": "إعادة كلمة المرور مطلوبة",
+        "rePasswordMisMatch": "كلمة المرور وإعادة كلمة المرور غير متطابقتين",
+        "phone": "الهاتف",
+        "phoneRequired": "الهاتف مطلوب",
+        "phonePattern": "نمط الهاتف المصري غير متطابق",
+        "submit": "تسجيل"
+    },
+
+    "forgetPassword": {
+        "enterEmail": "أدخل بريدك الإلكتروني المسجل",
+        "email": "أدخل بريدك الإلكتروني",
+        "emailRequired": "البريد الإلكتروني مطلوب",
+        "emailPattern": "البريد الإلكتروني غير صحيح",
+        "sendCode": "إرسال الكود"
+    },
+
+    "code": {
+        "enterCode": "أدخل الكود المرسل",
+        "code": "أدخل الكود المرسل",
+        "codeRequired": "الكود مطلوب",
+        "renew": "تجديد كلمة المرور"
+    },
+
+    "renewPassword": {
+        "renewPassword": "تجديد كلمة المرور الجديدة",
+        "email": "أدخل بريدك الإلكتروني",
+        "emailRequired": "البريد الإلكتروني مطلوب",
+        "emailPattern": "البريد الإلكتروني يجب أن يكون صالحًا",
+        "password": "أدخل كلمة المرور الجديدة",
+        "passwordRequired": "كلمة المرور الجديدة مطلوبة",
+        "submit": "تجديد والعودة إلى تسجيل الدخول"
+    },
+
+    "allOrders": {
+
+    }
+}
