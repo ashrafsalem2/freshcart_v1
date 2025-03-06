@@ -1,1 +1,51 @@
-<p>allorders works!</p>
+<div class="bg-slate-50 rounded border shadow p-2 w-[75%] mx-auto">
+    <h1 class="text-3xl text-green-600 text-center font-bold">{{ 'allOrders.orders' | translate }}</h1>
+    @if(allOrders > 0){
+  
+  
+      <p class="text-green-600 mb-2">
+        {{ 'allOrders.allOrders' | translate }} {{ allOrders}}
+      </p>
+   
+  
+    @for (prod of orders; track prod._id) {
+    <!-- will be repeated -->
+    <div class="border-b mb-2 p-2">
+     
+      <!-- info  -->
+      <div class="flex flex-grow justify-evenly items-start  w-full py-2">
+        <!-- info -->
+      
+          <h3>{{ 'allOrders.name' | translate }} {{ prod.user.name}}</h3>
+          <h4>{{ 'allOrders.orderCost' | translate }} {{ prod.totalOrderPrice | currency : "GBP" }}</h4>
+          <h4>{{ 'allOrders.paid' | translate }} {{ prod.isPaid  }}</h4>
+          @if(prod.paidAt){
+            
+            <h4>{{ 'allOrders.paidAt' | translate }} {{ prod.paidAt.split('T')[0]  }}</h4>
+        } @else {
+           
+            <h4></h4>
+        }
+         
+      
+  
+       
+      </div>
+    </div>
+    }
+
+    } @else {
+    <div class="flex flex-col justify-between w-full p-5">
+      <img
+        src="/images/no_product.png"
+        class="object-scale-down h-[150px]"
+        alt="no item"
+      />
+      <p class="text-center text-3xl text-green-600 font-bold mt-10">
+        {{ 'allOrders.empty' | translate }}
+      </p>
+    </div>
+  
+    }
+  </div>
+  

@@ -121,6 +121,12 @@
     },
 
     "allOrders":{
-
+        "orders":"All Orders",
+        "allOrders": "Total Orders: ",
+        "name":"Name: ",
+        "orderCost":"Order Cost: ",
+        "paid":"Paid: ",
+        "paidAt":"Paid At: ",
+        "empty":"No Orders Yet"
     }
 }
